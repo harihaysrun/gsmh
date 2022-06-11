@@ -54,7 +54,7 @@ body, html{
 
 .app-container{
   overflow:visible;
-  height:200vh;
+  /* height:200vh; */
 }
 
 nav{

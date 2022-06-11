@@ -26,10 +26,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'Header-Img'
 }
 </script>
 
