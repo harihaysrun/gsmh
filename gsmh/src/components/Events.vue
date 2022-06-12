@@ -1,9 +1,9 @@
 <template>
   <div class="py-5">
-    <h2 class="text-center">Hear From Our Current Residents & Alumni</h2>
+    <h2 class="text-center">Events</h2>
     <div class="divider"></div>
 
-    <div class="container events">
+    <div class="container p-md-0 events">
 
       <div class="position-relative mb-3">
         <img src="@/assets/images/events-1-mobile.png" class="d-block d-md-none">

@@ -22,7 +22,7 @@
     <Programmes/>
     <Testimonials/>
     <Events/>
-
+    <FAQ/>
 
   </div>
   
@@ -34,11 +34,12 @@ import About from './components/About.vue';
 import Programmes from './components/Programmes.vue';
 import Testimonials from './components/Testimonials.vue';
 import Events from './components/Events.vue';
+import FAQ from './components/FAQ.vue';
 
 export default {
   name: 'App',
   components: {
-    Header, About, Programmes, Testimonials, Events
+    Header, About, Programmes, Testimonials, Events, FAQ
   }
 }
 </script>
