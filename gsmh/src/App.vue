@@ -21,6 +21,7 @@
     <About/>
     <Programmes/>
     <Testimonials/>
+    <Events/>
 
 
   </div>
@@ -32,11 +33,12 @@ import Header from './components/Header.vue';
 import About from './components/About.vue';
 import Programmes from './components/Programmes.vue';
 import Testimonials from './components/Testimonials.vue';
+import Events from './components/Events.vue';
 
 export default {
   name: 'App',
   components: {
-    Header, About, Programmes, Testimonials
+    Header, About, Programmes, Testimonials, Events
   }
 }
 </script>

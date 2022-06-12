@@ -45,7 +45,7 @@
         </div>
 
         <div class="container px-0 carousel-buttons">
-          <div class="d-flex justify-content-between d-md-none">
+          <div class="d-flex justify-content-between d-lg-none">
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -56,7 +56,7 @@
             </button>
           </div>
 
-          <div class="d-none d-md-block">
+          <div class="d-none d-lg-block">
             <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -68,7 +68,7 @@
           </div>
         </div>
 
-        <div class="carousel-indicators m-md-0 d-flex align-items-center">
+        <div class="carousel-indicators m-lg-0 d-flex align-items-center">
           <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
         </div>
@@ -96,7 +96,7 @@ export default {
         'active': true
         },
         {'number':'RESIDENT TESTIMONIAL 1',
-        'text':'Suspendisse vehicula diam in velit sagittis sagittis. Phasellus ut tempus libero, eget dignissim ipsum. Nulla facilisi. Nam nec eros risus. Aenean id gravida ante. Phasellus posuere, libero et lacinia cursus, odio nisi vulputate mauris, in dictum lorem mi at velit. Phasellus molestie pulvinar orci. Curabitur sit amet ligula quis tellus tempus interdum ac commodo leo. Morbi sem lacus, lacinia non mi a, gravida condimentum lorem. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+        'text':'Suspendisse vehicula diam in velit sagittis sagittis. Phasellus ut tempus libero, eget dignissim ipsum. Nulla facilisi. Nam nec eros risus. Aenean id gravida ante. Phasellus posuere, libero et lacinia cursus, odio nisi vulputate mauris, in dictum lorem mi at velit. Phasellus molestie pulvinar orci.',
         'name': 'Dr. Levi Schmitt',
         'position': 'First year resident in Obstretics & Gynaecology, Former Attending General Surgeon',
         'imgBig': require('@/assets/images/jo.png'),
@@ -159,7 +159,7 @@ img{
 }
 
 .carousel-indicators{
-  background-color:white;
+  /* background-color:white; */
   height:50px;
 }
 
