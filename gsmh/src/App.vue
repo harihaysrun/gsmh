@@ -20,6 +20,7 @@
     <Header/>
     <About/>
     <Programmes/>
+    <Testimonials/>
 
 
   </div>
@@ -30,11 +31,12 @@
 import Header from './components/Header.vue';
 import About from './components/About.vue';
 import Programmes from './components/Programmes.vue';
+import Testimonials from './components/Testimonials.vue';
 
 export default {
   name: 'App',
   components: {
-    Header, About, Programmes
+    Header, About, Programmes, Testimonials
   }
 }
 </script>
