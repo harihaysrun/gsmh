@@ -5,14 +5,14 @@
 
       <div class="row">
 
-        <div class="quote position-relative p-5 col-12 col-md-8 m-md-auto col-lg-6 order-lg-2">
+        <div class="quote position-relative p-5 col-12 col-md-9 m-md-auto col-xl-6 order-xl-2">
           <small>A WORD FROM CHIEF BAILEY</small>
           <h3>We're always ready to welcome new talent. On behalf of the team at Grey Sloan, we hope to see you at the upcoming open house!</h3>
         </div>
 
-        <div class="col-12 col-md-8 m-md-auto col-lg-6 order-lg-1 pe-lg-5 position-relative">
-          <img src="@/assets/images/bailey.png" class="ms-5 ms-lg-0">
-          <div class="title-name text-white p-3 w-75 px-4">
+        <div class="col-12 col-md-9 m-md-auto col-xl-6 order-xl-1 pe-xl-5 position-relative">
+          <img src="@/assets/images/bailey.png" class="ms-5 ms-sm-4 ms-xl-0">
+          <div class="title-name text-white p-3 px-4">
             <small>CHIEF GENERAL</small>
             <br>Dr. Miranda Bailey
           </div>
@@ -85,6 +85,7 @@ img{
 .title-name{
   background-color:#163665;
   border-radius:10px;
+  width:60%;
   height:80px;
   position:absolute;
   top:15%;
@@ -92,17 +93,21 @@ img{
 
 @media only screen and (min-width:768px){
 
+  /* .title-name{
+    width:75%;
+  } */
 
 }
 
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1200px){
 
   .title-name{
-    right: -90px !important;
+    right: -100px !important;
     top:calc(100% - 90px);
     right:0;
     text-align:right;
     z-index:1;
+    width:75%;
   }
 
 }

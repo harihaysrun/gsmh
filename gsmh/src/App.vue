@@ -25,6 +25,7 @@
     <FAQ/>
     <Bailey/>
     <Contact/>
+    <Footer/>
 
   </div>
   
@@ -39,11 +40,12 @@ import Events from './components/Events.vue';
 import FAQ from './components/FAQ.vue';
 import Bailey from './components/Bailey.vue';
 import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    Header, About, Programmes, Testimonials, Events, FAQ, Bailey, Contact
+    Header, About, Programmes, Testimonials, Events, FAQ, Bailey, Contact, Footer
   }
 }
 </script>
