@@ -23,9 +23,24 @@ export default {
       'programme_type': 0,
       'search': '',
       'test': [
-        {'title':'Nillili Mambo', 'description': 'lorem ipsum', 'target': '#panelsStayOpen-collapseOne', 'targetId': 'panelsStayOpen-collapseOne', 'headerId': 'panelsStayOpen-headingOne'},
-        {'title':'No Joke', 'description': 'lorem ipsum', 'target': '#panelsStayOpen-collapseTwo', 'targetId': 'panelsStayOpen-collapseTwo', 'headerId': 'panelsStayOpen-headingTwo'},
-        {'title':'Her', 'description': 'lorem ipsum', 'target': '#panelsStayOpen-collapseThree', 'targetId': 'panelsStayOpen-collapseThree', 'headerId': 'panelsStayOpen-headingThree'}
+        {'title':'Nillili Mambo',
+        'description': 'Aliquam nisi leo, ullamcorper at condimentum elementum, sodales eget ex. Mauris dolor urna, maximus sagittis tellus vitae, dignissim semper arcu. Morbi vulputate nec arcu id pulvinar. Duis a velit nibh. Pellentesque scelerisque hendrerit accumsan. Vestibulum eget finibus dolor. Nullam augue libero, luctus eget bibendum quis, vehicula eleifend metus.',
+        'target': '#panelsStayOpen-collapseOne',
+        'targetId': 'panelsStayOpen-collapseOne',
+        'headerId': 'panelsStayOpen-headingOne'
+        },
+        {'title':'No Joke',
+        'description': 'lorem ipsum',
+        'target': '#panelsStayOpen-collapseTwo',
+        'targetId': 'panelsStayOpen-collapseTwo',
+        'headerId': 'panelsStayOpen-headingTwo'
+        },
+        {'title':'Her',
+        'description': 'lorem ipsum',
+        'target': '#panelsStayOpen-collapseThree',
+        'targetId': 'panelsStayOpen-collapseThree',
+        'headerId': 'panelsStayOpen-headingThree'
+        }
       ]
     }
   }
