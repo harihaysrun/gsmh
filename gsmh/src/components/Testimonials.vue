@@ -25,7 +25,7 @@
             </div>
           </div> -->
           
-          <div v-for="(t, index) in test" v-bind:key="t.id" class="carousel-item d-flex flex-column flex-md-row p-md-4 p-lg-5" :class="{active: index === 0}">
+          <div v-for="(t, index) in test" v-bind:key="t.id" class="carousel-item d-flex flex-column flex-md-row p-md-4 p-lg-5 bg-white" :class="{active: index === 0}">
             <img v-bind:src="t.imgBig" class="d-none d-md-block testi-img-big me-5" alt="...">
             <div>
               <div class="mb-5">

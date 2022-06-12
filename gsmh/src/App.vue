@@ -23,6 +23,7 @@
     <Testimonials/>
     <Events/>
     <FAQ/>
+    <Bailey />
 
   </div>
   
@@ -35,11 +36,12 @@ import Programmes from './components/Programmes.vue';
 import Testimonials from './components/Testimonials.vue';
 import Events from './components/Events.vue';
 import FAQ from './components/FAQ.vue';
+import Bailey from './components/Bailey.vue';
 
 export default {
   name: 'App',
   components: {
-    Header, About, Programmes, Testimonials, Events, FAQ
+    Header, About, Programmes, Testimonials, Events, FAQ, Bailey
   }
 }
 </script>

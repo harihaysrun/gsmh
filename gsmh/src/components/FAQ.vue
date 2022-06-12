@@ -20,9 +20,13 @@
           <Residency></Residency>
         </div>
 
-        <div v-if="tab === 2">Application</div>
+        <div v-if="tab === 2">
+          <Application></Application>
+        </div>
 
-        <div v-if="tab === 3">Open House</div>
+        <div v-if="tab === 3">
+          <OpenHouse></OpenHouse>
+        </div>
 
       </div>
 
@@ -35,11 +39,13 @@
 <script>
 
 import Residency from './FAQ-Residency.vue';
+import Application from './FAQ-Application.vue';
+import OpenHouse from './FAQ-OpenHouse.vue';
 
 export default {
   name: 'FAQ-Section',
   components: {
-    Residency
+    Residency, Application, OpenHouse
   },
   data:function(){
     return {

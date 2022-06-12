@@ -17,25 +17,25 @@
 
 <script>
 export default {
-  name: 'FAQ-Residency',
+  name: 'FAQ-Application',
   data:function(){
     return {
       'programme_type': 0,
       'search': '',
       'test': [
-        {'title':'Pellentesque lacus justo, laoreet vestibulum nulla vitae, laoreet aliquet mauris?',
+        {'title':'Who is eligible to apply?',
         'description': 'Nullam quis nulla egestas, porttitor ligula ut, efficitur nibh. Phasellus pretium suscipit nulla eu tempus. Nulla sodales elit est, ac cursus ligula fermentum quis. Nulla in dolor a ante porttitor accumsan ut vel quam. Duis finibus neque et urna venenatis tempor. Fusce vitae risus lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
         'target': '#panelsStayOpen-collapseOne',
         'targetId': 'panelsStayOpen-collapseOne',
         'headerId': 'panelsStayOpen-headingOne'
         },
-        {'title':'Nulla accumsan felis tellus, tempus venenatis risus finibus quis.',
-        'description': 'auris interdum felis nisl. Nam gravida tortor ultricies ex egestas, eget vehicula mauris cursus. Curabitur non felis odio. Sed porta sagittis nunc, a venenatis enim porta in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse ut ex at nunc lacinia hendrerit a quis mi. Ut gravida feugiat turpis, vel venenatis quam facilisis at. In bibendum nunc id augue molestie malesuada at sed enim.',
+        {'title':'What documents are required for submission?',
+        'description': 'Auris interdum felis nisl. Nam gravida tortor ultricies ex egestas, eget vehicula mauris cursus. Curabitur non felis odio. Sed porta sagittis nunc, a venenatis enim porta in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse ut ex at nunc lacinia hendrerit a quis mi. Ut gravida feugiat turpis, vel venenatis quam facilisis at. In bibendum nunc id augue molestie malesuada at sed enim.',
         'target': '#panelsStayOpen-collapseTwo',
         'targetId': 'panelsStayOpen-collapseTwo',
         'headerId': 'panelsStayOpen-headingTwo'
         },
-        {'title':'Curabitur ultricies sollicitudin odio?',
+        {'title':'When will I be called for an interview?',
         'description': 'Maecenas vel maximus diam, in posuere sapien. Sed varius leo non iaculis elementum. Duis sem sapien, accumsan ut nisl id, placerat maximus libero. Aliquam dui ipsum, venenatis eget ex in, iaculis facilisis diam. Sed justo neque, elementum a commodo ut, fermentum vitae metus. Suspendisse semper augue at tellus congue consectetur',
         'target': '#panelsStayOpen-collapseThree',
         'targetId': 'panelsStayOpen-collapseThree',
