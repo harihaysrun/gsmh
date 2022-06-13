@@ -5,13 +5,13 @@
 
       <div class="row">
 
-        <div class="quote position-relative p-5 col-12 col-md-9 m-md-auto col-xl-6 order-xl-2">
+        <div class="quote position-relative p-5 col-12 col-md-8 m-md-auto col-xl-7 order-md-2">
           <small>A WORD FROM CHIEF BAILEY</small>
           <h3>We're always ready to welcome new talent. On behalf of the team at Grey Sloan, we hope to see you at the upcoming open house!</h3>
         </div>
 
-        <div class="col-12 col-md-9 m-md-auto col-xl-6 order-xl-1 pe-xl-5 position-relative">
-          <img src="@/assets/images/bailey.png" class="ms-5 ms-sm-4 ms-xl-0">
+        <div class="col-12 col-md-4 m-md-auto col-xl-5 order-md-1 pe-xl-5 position-relative">
+          <img src="@/assets/images/bailey.png" class="ms-5 ms-sm-4 ms-md-0">
           <div class="title-name text-white p-3 px-4">
             <small>CHIEF GENERAL</small>
             <br>Dr. Miranda Bailey
@@ -33,6 +33,10 @@ export default {
 </script>
 
 <style scoped>
+
+.title-name small{
+  color:white;
+}
 
 .container{
   overflow:hidden;
@@ -93,15 +97,27 @@ img{
 
 @media only screen and (min-width:768px){
 
-  /* .title-name{
+  .title-name{
+    top:80%;
+    right:0;
+    left:0;
+    margin:auto;
+    text-align:center;
+    z-index:11;
     width:75%;
-  } */
+  }
+    
+  .container{
+    overflow:visible;
+  }
+
 
 }
 
 @media only screen and (min-width:1200px){
 
   .title-name{
+    margin-right:0;
     right: -100px !important;
     top:calc(100% - 90px);
     right:0;
