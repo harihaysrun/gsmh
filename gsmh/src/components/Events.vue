@@ -6,27 +6,29 @@
     <div class="container p-md-0 events">
 
       <div class="position-relative mb-3">
-        <img src="@/assets/images/events-1-mobile.png" class="d-block d-md-none">
+        <img src="@/assets/images/events-1-small.png" class="d-block d-sm-none">
+        <img src="@/assets/images/events-1-mobile.png" class="d-none d-sm-block d-md-none">
         <img src="@/assets/images/events-1-big.png" class="d-none d-md-block">
 
         <div class="h-100 position-absolute top-0 start-0 p-4 p-md-5 d-flex flex-column justify-content-center align-items-start">
           <h2>We're hosting our annual month-long open house soon. Reserve your slots now!</h2>
-          <div class="buttons mt-4">
-            <button>Reserve Slot</button>
-            <button>Brochure</button>
+          <div class="mt-4">
+            <button class="me-md-4">Reserve Slot</button>
+            <button class="dl-btn"><i class="bi bi-download me-2"></i> Brochure</button>
           </div>
         </div>
       </div>
 
       <div class="position-relative">
-        <img src="@/assets/images/events-2-mobile.png" class="d-block d-md-none">
+        <img src="@/assets/images/events-2-small.png" class="d-block d-sm-none">
+        <img src="@/assets/images/events-2-mobile.png" class="d-none d-sm-block d-md-none">
         <img src="@/assets/images/events-2-big.png" class="d-none d-md-block">
 
         <div class="h-100 position-absolute top-0 start-0 p-4 p-md-5 d-flex flex-column justify-content-center align-items-start">
           <h2>Have your heart set on a programme? Great! Applications open on August 20th.</h2>
-          <div class="buttons mt-4">
-            <button class="coming-soon-btn">Coming soon</button>
-          </div>
+          <!-- <div class="mt-4 w-100"> -->
+            <button class="mt-4 coming-soon-btn">Coming Soon</button>
+          <!-- </div> -->
         </div>
       </div>
 
@@ -74,6 +76,21 @@ img{
   width:100%;
 }
 
+button{
+  width:100%;
+  margin-bottom:15px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:white;
+  color:#163665;
+}
+
+.dl-btn{
+  border:1px solid white;
+  background-color:transparent;
+  color:white;
+}
+
 .coming-soon-btn{
   opacity:0.5;
   pointer-events:none;
@@ -83,6 +100,12 @@ img{
 
   .events h2{
     width:80%;
+  }
+
+  button{
+    width:auto;
+    margin-bottom:0;
+    padding:15px 60px;
   }
 
 }
