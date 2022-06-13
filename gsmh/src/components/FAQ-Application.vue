@@ -1,12 +1,12 @@
 <template>
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-      <div v-for="(f, index) of faq" v-bind:key="f.id" class="accordion-item">
+    <div class="accordion mt-3 mt-md-0" id="accordionPanelsStayOpenExample">
+      <div v-for="f in faq" v-bind:key="f.id" class="accordion-item">
         <div class="accordion-header" :id="f.headerId">
-          <button class="accordion-button p-0" :class="{collapsed: index != 0}" type="button" data-bs-toggle="collapse" :data-bs-target="f.target">
+          <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" :data-bs-target="f.target">
             <h5 class="py-4">{{f.title}}</h5>
           </button>
         </div>
-        <div :id="f.targetId" class="accordion-collapse" :class="{collapse: index === 0, show: index === 0, collapse: index != 0}">
+        <div :id="f.targetId" class="accordion-collapse collapse">
           <div class="accordion-body p-0 py-4">
             {{f.description}}
           </div>

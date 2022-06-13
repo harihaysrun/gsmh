@@ -3,7 +3,7 @@
     <h2 class="text-center">FAQ</h2>
     <div class="divider"></div>
 
-    <div class="container p-0 events">
+    <div class="container events">
 
       <div class="tabs d-flex flex-row text-center m-auto">
         <div @click="changeTab(1)" :class="{active: tab === 1}">Residency</div>
@@ -11,7 +11,7 @@
         <div @click="changeTab(3)" :class="{active: tab === 3}">Open House</div>
       </div>
 
-      <div class="faq-content p-3 p-md-5">
+      <div class="faq-content p-0 p-md-5">
 
         <Residency v-if="tab === 1"></Residency>
         <Application v-if="tab === 2"></Application>
