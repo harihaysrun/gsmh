@@ -59,7 +59,6 @@ export default {
   },
   methods:{
     onscroll:function(){
-      console.log(window.scrollY, document.body.scrollHeight)
       if(window.scrollY > document.getElementById('about').offsetTop - 500){
         this.section = 1;
       } else{
@@ -100,6 +99,8 @@ body, html{
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size:16px;
+  line-height:20px;
 }
 
 h1, h2, h3, h4, h5{
@@ -109,6 +110,38 @@ h1, h2, h3, h4, h5{
 small{
   font-family: 'Roboto Condensed', sans-serif;
   color:#163665;
+}
+
+input, select, textarea{
+  appearance: none;
+  border:0;
+  border-radius:0;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  /* height:35px; */
+  background-color:white;
+  color:black;
+  padding:10px 0 15px 0;
+}
+
+input:focus, select:focus, textarea:focus{
+  outline:0;
+  border-bottom:1px solid #163665;
+  color:#163665;
+  font-weight:700;
+}
+
+select{
+  background: url(@/assets/images/dropdown-arrow.png) no-repeat right;
+  background-size:17px 10px;
+}
+
+button{
+  appearance: none;
+  background-color:#163665;
+  border:0;
+  border-radius:10px;
+  padding:20px 60px;
+  color:white;
 }
 
 .app-container{

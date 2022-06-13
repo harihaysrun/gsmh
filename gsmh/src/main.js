@@ -1,20 +1,21 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 const VueScrollTo = require('vue-scrollto')
-// const VueScrollactive = require('vue-scrollactive')
-// import VueScrollactive from 'vue-scrollactive';
+import store from './store';
 
-// createApp(App).use(VueScrollactive)
-createApp(App).use(VueScrollTo, {
-                    container: "body",
-                    duration: 300,
-                    easing: "linear",
-                    offset: -100,
-                    force: true,
-                    cancelable: true,
-                    onStart: false,
-                    onDone: false,
-                    onCancel: false,
-                    x: false,
-                    y: true
-                }).mount('#app')
+const app = createApp(App);
+app.use(store);
+app.use(VueScrollTo, {
+            container: "body",
+            duration: 300,
+            easing: "linear",
+            offset: -50,
+            force: true,
+            cancelable: true,
+            onStart: false,
+            onDone: false,
+            onCancel: false,
+            x: false,
+            y: true
+        });
+app.mount('#app')

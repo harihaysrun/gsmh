@@ -14,17 +14,17 @@
         </div>
 
         <div class="form bg-white p-4 col-12 col-lg-7">
-          <div class="d-flex flex-column mb-3">
+          <div class="d-flex flex-column mb-4">
             <small>NAME</small>
             <input type="text">
           </div>
 
-          <div class="d-flex flex-column mb-3">
+          <div class="d-flex flex-column mb-4">
             <small>EMAIL</small>
             <input type="email">
           </div>
 
-          <div class="d-flex flex-column mb-3">
+          <div class="d-flex flex-column mb-4">
             <small>REASON FOR ENQUIRY</small>
             <select>
               <option value="-1" selected disabled>Select a reason</option>
