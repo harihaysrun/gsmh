@@ -8,23 +8,24 @@
       </div>
     </nav>
     <nav class="sec-nav">
-      <div class="container d-flex flex-row flex-nowrap overflow-scroll text-center">
-        <div class="sec-nav-link col-3 col-md-auto pe-md-5">About Us</div>
-        <div class="sec-nav-link col-4 col-md-auto pe-md-5">Programmes</div>
-        <div class="sec-nav-link col-4 col-md-auto pe-md-5">Testimonials</div>
-        <div class="sec-nav-link col-2 col-md-auto pe-md-5">FAQ</div>
-        <div class="sec-nav-link col-3 col-md-auto pe-md-5">Contact Us</div>
+      <div class="container py-3 d-flex flex-row flex-nowrap overflow-scroll text-center justify-content-lg-center">
+        <div class="sec-nav-link col-3 col-md-auto pe-md-5" v-scroll-to="'#test'">About Us</div>
+        <div class="sec-nav-link col-4 col-md-auto pe-md-5" v-scroll-to="'#programmes'">Programmes</div>
+        <div class="sec-nav-link col-4 col-md-auto pe-md-5" v-scroll-to="'#testimonials'">Testimonials</div>
+        <div class="sec-nav-link col-2 col-md-auto pe-md-5" v-scroll-to="'#events'">Events</div>
+        <div class="sec-nav-link col-2 col-md-auto pe-md-5" v-scroll-to="'#faq'">FAQ</div>
+        <div class="sec-nav-link col-3 col-md-auto pe-md-5" v-scroll-to="'#contact'">Contact Us</div>
       </div>
     </nav>
 
     <Header/>
-    <About/>
-    <Programmes/>
-    <Testimonials/>
-    <Events/>
-    <FAQ/>
+    <About id="test"/>
+    <Programmes id="programmes"/>
+    <Testimonials id="testimonials"/>
+    <Events id="events"/>
+    <FAQ id="faq"/>
     <Bailey/>
-    <Contact/>
+    <Contact id="contact"/>
     <Footer/>
 
   </div>
@@ -42,10 +43,25 @@ import Bailey from './components/Bailey.vue';
 import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
 
+
 export default {
   name: 'App',
   components: {
     Header, About, Programmes, Testimonials, Events, FAQ, Bailey, Contact, Footer
+  },
+  methods:{
+    scrollToElement:function(){
+      // console.log(this.About.getBoundingClientRect().width)
+      // console.log(document.getElementById('test'))
+      // console.log(this.$refs.aboutSection)
+      // this.$refs.aboutSection.scrollIntoView()
+      // window.scrollTo({
+      //   top: 100,
+      //   left: 100,
+      //   behavior: 'smooth'
+      // });
+      // this.$refs.aboutSection.scrollIntoView({behavior: 'smooth'});
+    }
   }
 }
 </script>
@@ -58,9 +74,18 @@ body, html{
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Archivo', sans-serif;
+}
+
+small{
+  font-family: 'Roboto Condensed', sans-serif;
+  color:#163665;
 }
 
 .app-container{
@@ -89,7 +114,7 @@ nav{
 }
 
 .container{
-  background-color:rgba(255,255,0,0.5);
+  background-color:rgba(255,255,0,0.3);
   width:100%;
   margin:0 auto;
   padding: 20px;
@@ -99,9 +124,20 @@ nav{
   width:60px;
 }
 
+img{
+  /* pointer-events:none; */
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 @media only screen and (min-width:768px){
   .container{
     width:720px;
+    padding: 20px 0;
   }
 }
 
