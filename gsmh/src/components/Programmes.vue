@@ -132,8 +132,10 @@ img{
 
 .dl-btn{
   background-color:rgb(22, 54, 101, 0.1);
+  /* background-color:white; */
+  /* border:1px solid #163665; */
   color:#163665;
-  padding:20px 25px;
+  padding:15px 20px;
 }
 
 @media only screen and (min-width:576px){

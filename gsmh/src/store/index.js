@@ -99,11 +99,32 @@ const store = createStore({
                 'description':'Proin semper luctus lorem, sit amet tincidunt metus efficitur quis. Cras libero libero, ornare sit amet nisl in',
                 'type':2
             },
+        ],
+        testimonials: [
+        {
+            'number':'RESIDENT TESTIMONIAL 1',
+            'text':'I had already completed my 4-year residency in General Surgery when I had the strong calling to switch over to OB/GYN. Chief Bailey and my superior attendings were very supportive of my decision. I basically had to restart from square one but if I had to do it all over again, I will.',
+            'name': 'Dr. Josephine Wilson',
+            'position': 'First year resident in Obstretics & Gynaecology,<br>Former Attending General Surgeon',
+            'imgBig': require('@/assets/images/jo.png'),
+            'imgSmall': require('@/assets/images/jo-mobile.png')
+        },
+        {
+            'number':'RESIDENT TESTIMONIAL 2',
+            'text':'Suspendisse vehicula diam in velit sagittis sagittis. Phasellus ut tempus libero, eget dignissim ipsum. Nulla facilisi. Nam nec eros risus. Aenean id gravida ante. Phasellus posuere, libero et lacinia cursus, odio nisi vulputate mauris, in dictum lorem mi at velit. Phasellus molestie pulvinar orci.',
+            'name': 'Dr. Levi Schmitt',
+            'position': 'Surgical Resident',
+            'imgBig': require('@/assets/images/levi.png'),
+            'imgSmall': require('@/assets/images/levi-mobile.png'),
+        }
         ]
     },
     getters: {
         programmes: function(state){
             return state.programmes
+        },
+        testimonials: function(state){
+            return state.testimonials
         }
     }
 })

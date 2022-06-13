@@ -1,6 +1,6 @@
 <template>
   <div class="py-5">
-    <h2 class="text-center">Hear From Our Current Residents & Alumni</h2>
+    <h2 class="text-center">Hear From Our Current<br class="d-block d-md-none"> Residents & Alumni</h2>
     <div class="divider"></div>
 
     <div class="container p-md-0 position-relative">
@@ -8,35 +8,19 @@
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
         <div class="carousel-inner">
-          <!-- <div class="carousel-item d-flex flex-column flex-md-row active p-md-4 p-lg-5">
-            <img src="@/assets/images/jo.png" class="d-none d-md-block testi-img-big me-5" alt="...">
-            <div>
-              <div class="mb-5">
-                <small>RESIDENT TESTIMONIAL 1</small>
-                <h3>I had already completed my 4-year residency in General Surgery when I had the strong calling to switch over to OB/GYN. Chief Bailey and my superior attendings were very supportive of my decision. I basically had to restart from square one but if I had to do it all over again, I will.</h3>
-              </div>
-              <div class="d-flex flex-row">
-                <img src="@/assets/images/jo-mobile.png" class="d-block d-md-none testi-img-mobile me-3" alt="...">
-                <div>
-                  <b>Dr. Josephine Wilson</b>
-                  <p class="m-0 p-0">First year resident in Obstretics & Gynaecology, Former Attending General Surgeon</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          
-          <div v-for="(t, index) in test" v-bind:key="t.id" class="carousel-item d-flex flex-column flex-md-row p-md-4 p-lg-5 bg-white" :class="{active: index === 0}">
-            <img v-bind:src="t.imgBig" class="d-none d-md-block testi-img-big me-5" alt="...">
-            <div>
-              <div class="mb-5">
+
+          <div v-for="(t, index) in testimonials" v-bind:key="t.id" class="carousel-item d-flex flex-column flex-md-row p-md-5 p-lg-5 bg-white" :class="{active: index === 0}">
+            <img v-bind:src="t.imgBig" class="d-none d-lg-block testi-img-big w-25 me-5" alt="...">
+            <div class="d-flex flex-column">
+              <div class="mb-4 mb-md-3">
                 <small>{{t.number}}</small>
-                <h3>{{t.text}}</h3>
+                <h3 class="mt-2">{{t.text}}</h3>
               </div>
-              <div class="d-flex flex-row">
-                <img v-bind:src="t.imgSmall" class="d-block d-md-none testi-img-mobile me-3" alt="...">
+              <div class="mt-auto d-flex flex-row">
+                <img v-bind:src="t.imgSmall" class="d-block d-lg-none testi-img-mobile me-3" alt="...">
                 <div>
                   <b>{{t.name}}</b>
-                  <p class="m-0 p-0">{{t.position}}</p>
+                  <p class="m-0 p-0 pt-1" v-html="t.position"></p>
                 </div>
               </div>
             </div>
@@ -86,23 +70,7 @@ export default {
   name: 'Testimonials-Section',
   data:function(){
     return {
-      'test': [
-        {'number':'RESIDENT TESTIMONIAL 1',
-        'text':'I had already completed my 4-year residency in General Surgery when I had the strong calling to switch over to OB/GYN. Chief Bailey and my superior attendings were very supportive of my decision. I basically had to restart from square one but if I had to do it all over again, I will.',
-        'name': 'Dr. Josephine Wilson',
-        'position': 'First year resident in Obstretics & Gynaecology, Former Attending General Surgeon',
-        'imgBig': require('@/assets/images/jo.png'),
-        'imgSmall': require('@/assets/images/jo-mobile.png'),
-        'active': true
-        },
-        {'number':'RESIDENT TESTIMONIAL 1',
-        'text':'Suspendisse vehicula diam in velit sagittis sagittis. Phasellus ut tempus libero, eget dignissim ipsum. Nulla facilisi. Nam nec eros risus. Aenean id gravida ante. Phasellus posuere, libero et lacinia cursus, odio nisi vulputate mauris, in dictum lorem mi at velit. Phasellus molestie pulvinar orci.',
-        'name': 'Dr. Levi Schmitt',
-        'position': 'First year resident in Obstretics & Gynaecology, Former Attending General Surgeon',
-        'imgBig': require('@/assets/images/jo.png'),
-        'imgSmall': require('@/assets/images/jo-mobile.png'),
-        }
-      ]
+      testimonials: this.$store.getters.testimonials
     }
   }
 }
@@ -133,6 +101,18 @@ h4{
 img{
   /* position:relative; */
   width:100%;
+}
+
+b{
+  font-size:20px;
+  line-height:22px;
+  color:#163665;
+}
+
+p{
+  font-size:14px;
+  line-height:16px;
+  color: rgba(0,0,0,0.35);
 }
 
 .programme-details{

@@ -140,7 +140,7 @@ button{
   background-color:#163665;
   border:0;
   border-radius:10px;
-  padding:20px 60px;
+  padding:15px 60px;
   color:white;
 }
 
