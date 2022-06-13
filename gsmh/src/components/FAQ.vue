@@ -73,6 +73,19 @@ h5{
   font-weight:400;
 }
 
+.accordion-button:not(.collapsed)::after, .accordion-button::after{
+  background-size:75%;
+  background-position: center;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: url(@/assets/images/collapse-blue.png);
+}
+
+.accordion-button::after{
+  background-image: url(@/assets/images/expand-black.png);
+}
+
 </style>
 
 

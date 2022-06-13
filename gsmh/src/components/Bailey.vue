@@ -13,7 +13,7 @@
         <div class="col-12 col-md-4 m-md-auto col-xl-5 order-md-1 pe-xl-5 position-relative">
           <img src="@/assets/images/bailey.png" class="ms-5 ms-sm-4 ms-md-0">
           <div class="title-name text-white p-3 px-4">
-            <small>CHIEF GENERAL</small>
+            <small>CHIEF OF SURGERY</small>
             <br>Dr. Miranda Bailey
           </div>
         </div>
@@ -93,12 +93,13 @@ img{
   height:80px;
   position:absolute;
   top:15%;
+  left:0;
 }
 
 @media only screen and (min-width:768px){
 
   .title-name{
-    top:80%;
+    top:75%;
     right:0;
     left:0;
     margin:auto;
@@ -106,11 +107,6 @@ img{
     z-index:11;
     width:75%;
   }
-    
-  .container{
-    overflow:visible;
-  }
-
 
 }
 
