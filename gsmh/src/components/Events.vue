@@ -26,9 +26,7 @@
 
         <div class="h-100 position-absolute top-0 start-0 p-4 p-md-5 d-flex flex-column justify-content-center align-items-start">
           <h2>Have your heart set on a programme? Great! Applications open on August 20th.</h2>
-          <!-- <div class="mt-4 w-100"> -->
             <button class="mt-4 coming-soon-btn">Coming Soon</button>
-          <!-- </div> -->
         </div>
       </div>
 

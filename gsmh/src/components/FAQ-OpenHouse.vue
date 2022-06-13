@@ -1,20 +1,19 @@
 <template>
     <div class="accordion" id="accordionPanelsStayOpenExample">
-      <div v-for="(t, index) of test" v-bind:key="t.id" class="accordion-item">
-        <h2 class="accordion-header" :id="t.headerId">
-          <button class="accordion-button" :class="{collapsed: index != 0}" type="button" data-bs-toggle="collapse" :data-bs-target="t.target">
-            {{t.title}}
+      <div v-for="(f, index) of faq" v-bind:key="f.id" class="accordion-item">
+        <div class="accordion-header" :id="f.headerId">
+          <button class="accordion-button p-0" :class="{collapsed: index != 0}" type="button" data-bs-toggle="collapse" :data-bs-target="f.target">
+            <h5 class="py-4">{{f.title}}</h5>
           </button>
-        </h2>
-        <div :id="t.targetId" class="accordion-collapse" :class="{collapse: index === 0, show: index === 0, collapse: index != 0}">
-          <div class="accordion-body">
-            {{t.description}}
+        </div>
+        <div :id="f.targetId" class="accordion-collapse" :class="{collapse: index === 0, show: index === 0, collapse: index != 0}">
+          <div class="accordion-body p-0 py-4">
+            {{f.description}}
           </div>
         </div>
       </div>
     </div>
 </template>
-
 <script>
 export default {
   name: 'FAQ-OpenHouse',
@@ -22,26 +21,7 @@ export default {
     return {
       'programme_type': 0,
       'search': '',
-      'test': [
-        {'title':'Can I cancel or postpone my reserved slot?',
-        'description': 'Vestibulum nec urna ante. Sed vulputate arcu nisl, eu fringilla magna suscipit sed. In quam nisl, volutpat imperdiet dignissim dignissim, interdum ut eros.',
-        'target': '#panelsStayOpen-collapseOne',
-        'targetId': 'panelsStayOpen-collapseOne',
-        'headerId': 'panelsStayOpen-headingOne'
-        },
-        {'title':'Can I reserve slots for groups?',
-        'description': 'Nam in libero pellentesque, vulputate quam sed, ultricies sem.',
-        'target': '#panelsStayOpen-collapseTwo',
-        'targetId': 'panelsStayOpen-collapseTwo',
-        'headerId': 'panelsStayOpen-headingTwo'
-        },
-        {'title':'Will there be any weekend slots?',
-        'description': 'Suspendisse massa lorem, venenatis id scelerisque et, viverra eu est.',
-        'target': '#panelsStayOpen-collapseThree',
-        'targetId': 'panelsStayOpen-collapseThree',
-        'headerId': 'panelsStayOpen-headingThree'
-        }
-      ]
+      'faq': this.$store.getters.faqOpenHouse
     }
   }
 }

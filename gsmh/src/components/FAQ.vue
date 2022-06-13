@@ -5,28 +5,17 @@
 
     <div class="container p-0 events">
 
-      <div class="tabs d-flex flex-row text-center">
-        <div v-if="tab === 1" class="active" @click="changeTab(1)">Residency</div>
-        <div v-else @click="changeTab(1)">Residency</div>
-        <div v-if="tab === 2" class="active" @click="changeTab(2)">Application</div>
-        <div v-else @click="changeTab(2)">Application</div>
-        <div v-if="tab === 3" class="active" @click="changeTab(3)">Open House</div>
-        <div v-else @click="changeTab(3)">Open House</div>
+      <div class="tabs d-flex flex-row text-center m-auto">
+        <div @click="changeTab(1)" :class="{active: tab === 1}">Residency</div>
+        <div @click="changeTab(2)" :class="{active: tab === 2}">Application</div>
+        <div @click="changeTab(3)" :class="{active: tab === 3}">Open House</div>
       </div>
 
       <div class="faq-content p-3 p-md-5">
 
-        <div v-if="tab === 1">
-          <Residency></Residency>
-        </div>
-
-        <div v-if="tab === 2">
-          <Application></Application>
-        </div>
-
-        <div v-if="tab === 3">
-          <OpenHouse></OpenHouse>
-        </div>
+        <Residency v-if="tab === 1"></Residency>
+        <Application v-if="tab === 2"></Application>
+        <OpenHouse v-if="tab === 3"></OpenHouse>
 
       </div>
 
@@ -61,6 +50,32 @@ export default {
 }
 </script>
 
+
+<style>
+
+h5{
+  margin:0;
+  color:#163665;
+  font-weight:800;
+}
+
+.accordion-item{
+  border:none;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.accordion-button{
+  background-color: white !important;
+}
+
+.collapsed h5{
+  color:black;
+  font-weight:400;
+}
+
+</style>
+
+
 <style scoped>
 
 h2{
@@ -86,7 +101,11 @@ h4{
 .tabs div{
   flex:1;
   padding-bottom:15px;
-  /* border-bottom: 1px solid rgb(22, 54, 101, 0.2); */
+}
+
+.tabs div:hover{
+  color:#0F2C56;
+  cursor:pointer;
 }
 
 .active{
@@ -102,6 +121,10 @@ h4{
 
 @media only screen and (min-width:768px){
 
+
+  .tabs {
+    width:500px;
+  }
 
   .faq-content{
     border: 1px solid rgb(22, 54, 101, 0.2);
