@@ -1,22 +1,43 @@
 <template>
 
   <div class="app-container">
-    <nav class="pri-nav">
-      <div class="container d-flex justify-content-between">
-        <img src="@/assets/images/logo.png" class="logo" alt="">
-        <i class="fa-solid fa-bars d-block d-lg-none"></i>
+
+    <nav>
+    <div class="pri-nav">
+      <div class="container d-flex justify-content-between align-items-center position-relative">
+        <img src="@/assets/images/logo.png" class="logo">
+        <i class="fa-solid fa-bars d-block d-lg-none" @click="showHM"></i>
+        <div class="d-none d-lg-block">
+          <a class="me-4" href="">About</a>
+          <a class="me-4" href="">Services We Offer</a>
+          <a class="me-4 active" href="">Careers @ GSMH</a>
+          <a class="me-4" href="">FAQ</a>
+          <a href="">Contact Us</a>
+        </div>
       </div>
-    </nav>
-    <nav class="sec-nav">
+    </div>
+    <div class="sec-nav">
       <div class="container p-0 d-flex flex-row flex-nowrap overflow-scroll text-center justify-content-lg-center">
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#about'" @click="scrollToSection(1)" :class="{'sec-nav-link-active': section === 1}">About Us</div>
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#programmes'" @click="scrollToSection(2)" :class="{'sec-nav-link-active': section === 2}">Programmes</div>
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#testimonials'" @click="scrollToSection(3)" :class="{'sec-nav-link-active': section === 3}">Testimonials</div>
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#events'" @click="scrollToSection(4)" :class="{'sec-nav-link-active': section === 4}">Events</div>
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#faq'" @click="scrollToSection(5)" :class="{'sec-nav-link-active': section === 5}">FAQ</div>
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#contact'" @click="scrollToSection(6)" :class="{'sec-nav-link-active': section === 6}">Contact Us</div>
+        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#about'" @click="highlightSection(1)" :class="{'sec-nav-link-active': section === 1}">About Us</div>
+        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#programmes'" @click="highlightSection(2)" :class="{'sec-nav-link-active': section === 2}">Programmes</div>
+        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#testimonials'" @click="highlightSection(3)" :class="{'sec-nav-link-active': section === 3}">Testimonials</div>
+        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#events'" @click="highlightSection(4)" :class="{'sec-nav-link-active': section === 4}">Events</div>
+        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#faq'" @click="highlightSection(5)" :class="{'sec-nav-link-active': section === 5}">FAQ</div>
+        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#contact'" @click="highlightSection(6)" :class="{'sec-nav-link-active': section === 6}">Contact Us</div>
       </div>
+    </div>
     </nav>
+
+    <Transition>
+    <div class="hamburger-menu pt-4 p-4 d-flex flex-column" v-if="hamburgerMenu === true">
+      <i class="bi bi-x-lg mb-4" @click="closeHM"></i>
+      <a class="mb-3" href="">About</a>
+      <a class="mb-3" href="">Services We Offer</a>
+      <a class="mb-3 active" href="">Careers @ GSMH</a>
+      <a class="mb-3" href="">FAQ</a>
+      <a href="">Contact Us</a>
+    </div>
+    </Transition>
 
     <Header/>
     <About id="about"/>
@@ -51,7 +72,8 @@ export default {
   },
   data(){
     return{
-      'section': 0
+      'section': 0,
+      'hamburgerMenu': false
     }
   },
   mounted(){
@@ -80,13 +102,61 @@ export default {
         this.section = 6;
       }
     },
-    scrollToSection:function(sectionNo){
-      console.log(sectionNo)
+    highlightSection:function(sectionNo){
       this.section = sectionNo;
+    },
+    showHM: function(){
+      this.hamburgerMenu = true;
+    },
+    closeHM: function(){
+      console.log("close hm")
+      this.hamburgerMenu = false;
     }
   }
 }
 </script>
+
+<style scoped>
+
+a{
+  text-decoration:none;
+  color:black;
+}
+
+a:hover{
+  color: #163665;
+}
+
+.active{
+  color: #163665;
+  font-weight:900;
+}
+
+.active::after{
+  content:'';
+  position:absolute;
+  bottom:0;
+  right:200px;
+  /* width:10px; */
+  /* height:10px; */
+  border-left:10px solid transparent;
+  border-bottom:10px solid #0F2C56;
+  border-right:10px solid transparent;
+  border-top:10px solid transparent;
+  color: #163665;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: all 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  transform:translateX(100%);
+}
+
+</style>
 
 <style>
 
@@ -144,12 +214,27 @@ button{
   color:white;
 }
 
+
+.hamburger-menu{
+  position:fixed;
+  top:0;
+  right:0;
+  width:60%;
+  height:100vh;
+  z-index:100;
+  background-color:white;
+  border-left: 1px solid rgba(0,0,0,0.1);
+}
+
 .app-container{
+  position:relative;
   overflow:visible;
   /* height:200vh; */
 }
 
 nav{
+  position: sticky;
+  top:0;
   z-index:10;
 }
 
@@ -161,9 +246,6 @@ nav{
 .sec-nav{
   background-color:#0F2C56;
   color:white; 
-  position: sticky;
-  top:0;
-  z-index:10;
 }
 
 .sec-nav .container::-webkit-scrollbar{
@@ -178,7 +260,8 @@ nav{
 }
 
 .logo{
-  width:60px;
+  /* width:60px; */
+  height:25px;
 }
 
 .sec-nav-link{
@@ -213,6 +296,10 @@ img{
   .container{
     width:768px;
   }
+
+  .logo{
+    height:35px;
+  }
 }
 
 @media only screen and (min-width:1024px){
@@ -225,6 +312,7 @@ img{
   .container{
     width:1024px;
   }
+
 }
 
 @media only screen and (min-width:1400px){

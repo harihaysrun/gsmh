@@ -5,7 +5,7 @@
 
     <div class="container p-0 position-relative mb-3">
       <img class="programme-pic" src="@/assets/images/programmes.png" alt="">
-      <div class="programme-details col-12 col-sm-11col-md-10 col-lg-9 position-absolute bottom-0 start-50 translate-middle-x m-auto p-3 d-flex flex-row justify-content-around text-center text-md-start">
+      <div class="programme-details col-12 col-sm-11 col-md-10 col-lg-8 position-absolute bottom-0 start-50 translate-middle-x m-auto p-3 d-flex flex-row justify-content-around text-center text-md-start">
         <div class="col-4 col-md-auto d-flex flex-column flex-md-row align-items-center">
           <h1 class="me-md-3">16</h1>
           Programmes<br class="d-none d-md-block"> in Total
@@ -19,19 +19,19 @@
           Senior Residency<br class="d-none d-md-block"> Programmes
         </div>
       </div>
-      <div class="bg-warning p-4"></div>
+      <div class="p-4"></div>
     </div>
 
     <div class="container px-md-0 d-flex flex-column flex-md-row">
       <div class="col-12 col-md-6 mb-3 mb-md-0 pe-md-2">
         <select v-model="programme_type" v-on:change="changeType" name="" id="" class="w-100">
-          <option value="0">All Programmes</option>
+          <option value="0">All Programme Types</option>
           <option value="1">Junior Residency Programmes</option>
           <option value="2">Senior Residency Programmes</option>
         </select>
       </div>
       <div class="col-12 col-md-6 ps-md-2">
-        <input v-model="search" v-on:input="showProg" type="text" class="w-100" placeholder="Search by keyword">
+        <input v-model="search" v-on:input="showProg" type="text" class="w-100" placeholder="Search by programme name">
       </div>
     </div>
 

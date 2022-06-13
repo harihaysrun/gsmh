@@ -1,5 +1,5 @@
 <template>
-  <div class="py-5 bg">
+  <div class="pt-5 pb-3 bg">
 
     <div class="container p-4 p-md-3 events">
     
