@@ -171,7 +171,7 @@ nav{
 }
 
 .container{
-  background-color:rgba(255,255,0,0.3);
+  /* background-color:rgba(255,255,0,0.3); */
   width:100%;
   margin:0 auto;
   padding: 20px;
