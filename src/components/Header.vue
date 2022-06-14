@@ -11,10 +11,10 @@
       </div>
     </div>
     <div class="upcoming-events text-center text-white">
-      <div class="ue-title py-2 d-block d-lg-none">Upcoming Events</div>
+      <div class="ue-title py-2 py-lg-3 d-block d-lg-none">Upcoming Events</div>
       <div class="container p-0 d-lg-flex flex-lg-row">
-        <div class="ue-title py-2 pe-4 d-none d-lg-block">Upcoming Events</div>
-        <div class="ue-events py-2 ps-lg-4 d-flex flex-row">
+        <div class="ue-title py-2 py-lg-3 pe-4 d-none d-lg-block">Upcoming Events</div>
+        <div class="ue-events py-2 py-lg-3 ps-lg-4 d-flex flex-row">
           <div class="col-6 col-lg-auto"><b>JUL 27</b><br class="d-block d-md-none"/><span class="d-none d-md-inline mx-2">|</span>Open House</div>
           <div class="divider d-none d-lg-block mx-lg-4"></div>
           <div class="col-6 col-lg-auto"><b>AUG 20</b><br class="d-block d-md-none"/><span class="d-none d-md-inline mx-2">|</span>Applications Open</div>
@@ -90,12 +90,20 @@ h1{
 @media only screen and (min-width:1400px){
 
   .upcoming-events::before{
-    width:20%;
+    width:18%;
   }
 
 }
 
 @media only screen and (min-width:2000px){
+
+  .upcoming-events::before{
+    width:25%;
+  }
+
+}
+
+@media only screen and (min-width:2500px){
 
   .upcoming-events::before{
     width:30%;
