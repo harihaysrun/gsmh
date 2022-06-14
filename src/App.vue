@@ -127,7 +127,7 @@ a:hover{
   color: #163665;
 }
 
-.active{
+.active, i{
   color: #163665;
   font-weight:900;
 }
