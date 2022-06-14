@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-5 pb-3 bg">
+  <div class="pt-5 pb-3 bg mt-3 mt-lg-5">
 
     <div class="container p-4 p-md-3 events">
     
@@ -144,7 +144,7 @@ textarea{
 
 }
 
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:992px){
 
   .bg::before{
     background-image: url(@/assets/images/triangle.png);
