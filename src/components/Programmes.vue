@@ -35,6 +35,10 @@
       </div>
     </div>
 
+    <div class="container py-3 py-lg-2 text-center text-lg-start dl-text">
+      Click on Learn More to see more details of the respective programmes or the download button to download the programme brochure.
+    </div>
+
     <div class="container">
       <div class="row">
         <div v-for="p in programmes" v-bind:key="p.id" class="col-12 col-md-6 p-2">
@@ -140,6 +144,10 @@ img{
 
 .dl-btn:hover{
   background-color:rgb(22, 54, 101, 0.2);
+}
+
+.dl-text{
+  color:#aaaaaa;
 }
 
 @media only screen and (min-width:576px){
