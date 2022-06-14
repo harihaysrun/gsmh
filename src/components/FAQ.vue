@@ -86,6 +86,11 @@ h5{
   background-image: url(@/assets/images/expand-black.png);
 }
 
+.accordion-button:focus{
+  box-shadow:none;
+  border-bottom: 1px solid #F0F0F0;
+}
+
 </style>
 
 

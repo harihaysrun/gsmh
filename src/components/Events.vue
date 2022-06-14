@@ -83,10 +83,23 @@ button{
   color:#163665;
 }
 
+button:hover{
+  /* background-color:rgb(22, 54, 101, 0.2); */
+  background-color:#c9d7ef;
+  /* opacity:0.5; */
+}
+
 .dl-btn{
+  box-sizing: border-box;
   border:1px solid white;
   background-color:transparent;
   color:white;
+}
+
+.dl-btn:hover{
+  /* background-color:white; */
+  color:#163665;
+  border:1px solid transparent;
 }
 
 .coming-soon-btn{

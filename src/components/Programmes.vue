@@ -138,6 +138,10 @@ img{
   padding:15px 20px;
 }
 
+.dl-btn:hover{
+  background-color:rgb(22, 54, 101, 0.2);
+}
+
 @media only screen and (min-width:576px){
 
   h1{

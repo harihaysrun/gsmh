@@ -3,29 +3,29 @@
   <div class="app-container">
 
     <nav>
-    <div class="pri-nav">
-      <div class="container d-flex justify-content-between align-items-center position-relative">
-        <img src="@/assets/images/logo.png" class="logo">
-        <i class="fa-solid fa-bars d-block d-lg-none" @click="showHM"></i>
-        <div class="d-none d-lg-block">
-          <a class="me-4" href="">About</a>
-          <a class="me-4" href="">Services We Offer</a>
-          <a class="me-4 active" href="">Careers @ GSMH</a>
-          <a class="me-4" href="">FAQ</a>
-          <a href="">Contact Us</a>
+      <div class="pri-nav">
+        <div class="container d-flex justify-content-between align-items-center position-relative">
+          <img src="@/assets/images/logo.png" class="logo">
+          <i class="fa-solid fa-bars d-block d-lg-none" @click="showHM"></i>
+          <div class="d-none d-lg-block">
+            <a class="me-4" href="">About</a>
+            <a class="me-4" href="">Services We Offer</a>
+            <a class="me-4 active" href="">Careers @ GSMH</a>
+            <a class="me-4" href="">FAQ</a>
+            <a href="">Contact Us</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="sec-nav">
-      <div class="container p-0 d-flex flex-row flex-nowrap overflow-scroll text-center justify-content-lg-center">
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#about'" @click="highlightSection(1)" :class="{'sec-nav-link-active': section === 1}">About Us</div>
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#programmes'" @click="highlightSection(2)" :class="{'sec-nav-link-active': section === 2}">Programmes</div>
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#testimonials'" @click="highlightSection(3)" :class="{'sec-nav-link-active': section === 3}">Testimonials</div>
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#events'" @click="highlightSection(4)" :class="{'sec-nav-link-active': section === 4}">Events</div>
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#faq'" @click="highlightSection(5)" :class="{'sec-nav-link-active': section === 5}">FAQ</div>
-        <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#contact'" @click="highlightSection(6)" :class="{'sec-nav-link-active': section === 6}">Contact Us</div>
+      <div class="sec-nav">
+        <div class="container p-0 d-flex flex-row flex-nowrap overflow-scroll text-center justify-content-lg-center">
+          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#about'" @click="highlightSection(1)" :class="{'sec-nav-link-active': section === 1}">About Us</div>
+          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#programmes'" @click="highlightSection(2)" :class="{'sec-nav-link-active': section === 2}">Programmes</div>
+          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#testimonials'" @click="highlightSection(3)" :class="{'sec-nav-link-active': section === 3}">Testimonials</div>
+          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#events'" @click="highlightSection(4)" :class="{'sec-nav-link-active': section === 4}">Events</div>
+          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#faq'" @click="highlightSection(5)" :class="{'sec-nav-link-active': section === 5}">FAQ</div>
+          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#contact'" @click="highlightSection(6)" :class="{'sec-nav-link-active': section === 6}">Contact Us</div>
+        </div>
       </div>
-    </div>
     </nav>
 
     <Transition>
@@ -214,6 +214,9 @@ button{
   color:white;
 }
 
+button:hover{
+  background-color:#0F2C56;
+}
 
 .hamburger-menu{
   position:fixed;
@@ -275,6 +278,10 @@ nav{
   border-bottom:2px solid white;
 }
 
+.sec-nav-link-active{
+  background-color:rgba(255,255,255,0.1);
+}
+
 img{
   /* pointer-events:none; */
   user-drag: none;
@@ -298,7 +305,7 @@ img{
   }
 
   .logo{
-    height:35px;
+    height:30px;
   }
 }
 

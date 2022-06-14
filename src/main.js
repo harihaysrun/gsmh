@@ -9,7 +9,7 @@ app.use(VueScrollTo, {
             container: "body",
             duration: 300,
             easing: "linear",
-            offset: -50,
+            offset: -150,
             force: true,
             cancelable: true,
             onStart: false,

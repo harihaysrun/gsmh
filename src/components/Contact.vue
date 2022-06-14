@@ -34,10 +34,12 @@
             </select>
           </div>
 
-          <div class="d-flex flex-column">
+          <div class="d-flex flex-column mb-4">
             <small>NAME</small>
             <textarea placeholder="Your message"></textarea>
           </div>
+
+          <button class="w-100">Submit Enquiry</button>
 
         </div>
       </div>
