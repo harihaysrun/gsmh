@@ -3,11 +3,11 @@
     <h2 class="text-center">Hear From Our Current<br class="d-block d-md-none"> Residents & Alumni</h2>
     <div class="divider"></div>
 
-    <div class="container p-md-0 position-relative">
+    <div class="container p-md-0">
 
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-        <div class="carousel-inner">
+        <div class="carousel-inner overflow-visible position-relative">
 
           <div v-for="(t, index) in testimonials" v-bind:key="t.id" class="carousel-item d-flex flex-column flex-md-row p-md-5 p-lg-5 bg-white" :class="{active: index === 0}">
             <img v-bind:src="t.imgBig" class="d-none d-lg-block testi-img-big w-25 me-5" alt="...">
@@ -26,6 +26,17 @@
             </div>
           </div>
 
+          <div class="d-none d-lg-block">
+            <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next position-absolute top-50 start-100 translate-middle" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
         </div>
 
         <div class="container px-0 carousel-buttons">
@@ -40,16 +51,7 @@
             </button>
           </div>
 
-          <div class="d-none d-lg-block">
-            <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next position-absolute top-50 start-100 translate-middle" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+
         </div>
 
         <div class="carousel-indicators m-lg-0 d-flex align-items-center">

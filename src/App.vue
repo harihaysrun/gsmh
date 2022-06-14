@@ -142,6 +142,22 @@ a:hover{
   transform:translateX(100%);
 }
 
+@media only screen and (min-width:992px){
+
+  .active::after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    right:210px;
+    border-left:10px solid transparent;
+    border-bottom:10px solid #0F2C56;
+    border-right:10px solid transparent;
+    border-top:10px solid transparent;
+    color: #163665;
+  }
+
+}
+
 </style>
 
 <style>
@@ -293,20 +309,6 @@ img{
 
   .logo{
     height:30px;
-  }
-
-  .active::after{
-    content:'';
-    position:absolute;
-    bottom:0;
-    right:210px;
-    /* width:10px; */
-    /* height:10px; */
-    border-left:10px solid transparent;
-    border-bottom:10px solid #0F2C56;
-    border-right:10px solid transparent;
-    border-top:10px solid transparent;
-    color: #163665;
   }
 
 }
