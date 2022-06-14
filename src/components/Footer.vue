@@ -107,7 +107,7 @@
     </div>
 
     <div class="below-footer text-center p-2">
-      GREY SLOAN MEMORIAL HOSPITAL 2022
+      <i class="bi bi-github me-1"></i> HARIHAYSRUN 2022
     </div>
 
   </footer>
@@ -135,6 +135,7 @@ footer{
 }
 
 .below-footer{
+  font-size:14px;
   background-color:#0F2C56;
   color:rgba(255,255,255,0.6);
 }
