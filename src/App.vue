@@ -18,12 +18,12 @@
       </div>
       <div class="sec-nav">
         <div class="container p-0 d-flex flex-row flex-nowrap overflow-scroll text-center justify-content-lg-center">
-          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#about'" @click="highlightSection(1)" :class="{'sec-nav-link-active': section === 1}">About Us</div>
-          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#programmes'" @click="highlightSection(2)" :class="{'sec-nav-link-active': section === 2}">Programmes</div>
-          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#testimonials'" @click="highlightSection(3)" :class="{'sec-nav-link-active': section === 3}">Testimonials</div>
-          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#events'" @click="highlightSection(4)" :class="{'sec-nav-link-active': section === 4}">Events</div>
-          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#faq'" @click="highlightSection(5)" :class="{'sec-nav-link-active': section === 5}">FAQ</div>
-          <div class="sec-nav-link py-3 px-4 col-md-auto text-nowrap" v-scroll-to="'#contact'" @click="highlightSection(6)" :class="{'sec-nav-link-active': section === 6}">Contact Us</div>
+          <div class="sec-nav-link px-4 col-md-auto text-nowrap" v-scroll-to="'#about'" @click="highlightSection(1)" :class="{'sec-nav-link-active': section === 1}">About Us</div>
+          <div class="sec-nav-link px-4 col-md-auto" v-scroll-to="'#programmes'" @click="highlightSection(2)" :class="{'sec-nav-link-active': section === 2}">Programmes</div>
+          <div class="sec-nav-link px-4 col-md-auto" v-scroll-to="'#testimonials'" @click="highlightSection(3)" :class="{'sec-nav-link-active': section === 3}">Testimonials</div>
+          <div class="sec-nav-link px-4 col-md-auto" v-scroll-to="'#events'" @click="highlightSection(4)" :class="{'sec-nav-link-active': section === 4}">Events</div>
+          <div class="sec-nav-link px-4 col-md-auto" v-scroll-to="'#faq'" @click="highlightSection(5)" :class="{'sec-nav-link-active': section === 5}">FAQ</div>
+          <div class="sec-nav-link px-4 col-md-auto text-nowrap" v-scroll-to="'#contact'" @click="highlightSection(6)" :class="{'sec-nav-link-active': section === 6}">Contact Us</div>
         </div>
       </div>
     </nav>
@@ -273,6 +273,8 @@ nav{
   box-sizing: border-box;
   border-bottom:2px solid transparent;
   cursor:pointer;
+  padding-top:12px !important;
+  padding-bottom:12px !important;
 }
 
 .sec-nav-link:hover, .sec-nav-link-active{
