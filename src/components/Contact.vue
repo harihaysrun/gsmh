@@ -7,7 +7,7 @@
         <div class="text text-center text-lg-start col-12 col-lg-5 mb-4">
           <h2>For further enquiries,<br>please contact us.</h2>
           <p class="col-12 col-md-6 col-lg-10 m-auto my-4 m-lg-0 my-lg-4">Enquiries will be answered within two business days, excluding eve and public holidays.</p>
-          <div class="d-flex flex-column flex-md-row justify-content-center justify-content-lg-start">
+          <div class="d-flex flex-column justify-content-center justify-content-lg-start">
             <p class="me-md-4"><i class="bi bi-telephone me-2"></i> 99999999</p>
             <p><i class="bi bi-envelope me-2"></i> residency@greysloan.com</p>
           </div>
