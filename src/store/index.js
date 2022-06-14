@@ -16,7 +16,7 @@ const store = createStore({
                 'type':2
             },
             {   
-                'img': require('@/assets/images/programmes/2.png'),
+                'img': require('@/assets/images/programmes/3.png'),
                 'title':'General Surgery',
                 'description':'Proin semper luctus lorem, sit amet tincidunt metus efficitur quis. Cras libero libero, ornare sit amet nisl in',
                 'type':2

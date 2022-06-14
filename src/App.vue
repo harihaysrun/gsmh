@@ -4,7 +4,7 @@
 
     <nav>
       <div class="pri-nav">
-        <div class="container d-flex justify-content-between align-items-center position-relative">
+        <div class="container d-flex justify-content-between align-items-center position-relative py-3">
           <img src="@/assets/images/logo.png" class="logo">
           <i class="fa-solid fa-bars d-block d-lg-none" @click="showHM"></i>
           <div class="d-none d-lg-block">
@@ -29,7 +29,7 @@
     </nav>
 
     <Transition>
-    <div class="hamburger-menu pt-4 p-4 d-flex flex-column" v-if="hamburgerMenu === true">
+    <div class="hamburger-menu pt-4 p-4 d-flex flex-column d-block d-lg-none" v-if="hamburgerMenu === true">
       <i class="bi bi-x-lg mb-4" @click="closeHM"></i>
       <a class="mb-3" href="">About</a>
       <a class="mb-3" href="">Services We Offer</a>
@@ -130,20 +130,6 @@ a:hover{
 .active, i{
   color: #163665;
   font-weight:900;
-}
-
-.active::after{
-  content:'';
-  position:absolute;
-  bottom:0;
-  right:210px;
-  /* width:10px; */
-  /* height:10px; */
-  border-left:10px solid transparent;
-  border-bottom:10px solid #0F2C56;
-  border-right:10px solid transparent;
-  border-top:10px solid transparent;
-  color: #163665;
 }
 
 .v-enter-active,
@@ -297,6 +283,7 @@ img{
     width:720px;
     padding: 20px 0;
   }
+
 }
 
 @media only screen and (min-width:992px){
@@ -307,6 +294,21 @@ img{
   .logo{
     height:30px;
   }
+
+  .active::after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    right:210px;
+    /* width:10px; */
+    /* height:10px; */
+    border-left:10px solid transparent;
+    border-bottom:10px solid #0F2C56;
+    border-right:10px solid transparent;
+    border-top:10px solid transparent;
+    color: #163665;
+  }
+
 }
 
 @media only screen and (min-width:1024px){
