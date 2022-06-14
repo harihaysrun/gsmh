@@ -107,7 +107,7 @@
     </div>
 
     <div class="below-footer text-center p-2">
-      <i class="bi bi-github me-1"></i> HARIHAYSRUN 2022
+      <a href="https://github.com/harihaysrun" target="_blank"><i class="bi bi-github me-1"></i> HARIHAYSRUN 2022</a>
     </div>
 
   </footer>

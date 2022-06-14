@@ -1,24 +1,13 @@
 # gsmh
 
-## Project setup
-```
-yarn install
-```
+![cover image](src/assets/cover.jpg)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+On my quest to polish up my web designing skills, this is the second in my list of prompts.
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Having watched all 18 seasons (whew finally), I noticed how Grey Sloan Memorial Hospital was struggling to attract students at a recruitment drive.
 
-### Lints and fixes files
-```
-yarn lint
-```
+Not going to give out any spoilers in case you've yet to watch the season finale but this is my take on how the hospital's residency programmes page would look like!
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+References are taken from NUHS's website, and I disliked how I had to click onto another page to view the programmes, FAQ, etc. so I thought of combining them all into one page.
+
+[View landing page prototype](https://nsy-gsmh.netlify.app/)
