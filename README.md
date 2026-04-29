@@ -10,4 +10,4 @@ Not going to give out any spoilers in case you've yet to watch the season finale
 
 References are taken from NUHS's website, and I disliked how I had to click onto another page to view the programmes, FAQ, etc. so I thought of combining them all into one page.
 
-[View landing page prototype](https://nsy-gsmh.netlify.app/)
+[View landing page prototype](https://nsy22-gsmh.netlify.app/)
